@@ -24,3 +24,5 @@ print(r4.text)
 job_data2 = json.loads(r4.text)
 if job_data2["result"] and job_data2["status"] == "Job is ready":
     print("Все ОК!")
+else:
+    print("Что-то не так.")
