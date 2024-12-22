@@ -11,6 +11,8 @@ response = requests.head("https://playground.learnqa.ru/ajax/api/compare_query_t
 print(response.text)
 response = requests.options("https://playground.learnqa.ru/ajax/api/compare_query_type")
 print(response.text)
+response = requests.patch("https://playground.learnqa.ru/ajax/api/compare_query_type")
+print(response.text)
 
 # 3. Делает запрос с правильным значением method
 payload = {"method": "GET"}
